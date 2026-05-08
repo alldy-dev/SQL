@@ -1,0 +1,12 @@
+/*
+SQL TASK
+Find Customers whose first name contains leading or trailing spaces
+*/
+
+use MyDatabase
+
+SELECT 
+    first_name
+FROM customers
+WHERE first_name != TRIM(first_name)
+
