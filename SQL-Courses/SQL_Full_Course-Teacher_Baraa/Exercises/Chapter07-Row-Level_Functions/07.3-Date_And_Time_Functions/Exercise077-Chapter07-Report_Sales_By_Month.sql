@@ -1,0 +1,11 @@
+/*
+SQL TASK
+*/
+
+Use SalesDB
+
+SELECT 
+        FORMAT(OrderDate, 'MMM yy') OrderDate,
+        COUNT(*) 
+FROM Sales.Orders
+GROUP BY FORMAT(OrderDate, 'MMM yy')
